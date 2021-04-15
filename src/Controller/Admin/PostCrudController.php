@@ -3,10 +3,14 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Post;
+<<<<<<< HEAD
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
+=======
+use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
+>>>>>>> back
 
 class PostCrudController extends AbstractCrudController
 {
@@ -15,6 +19,7 @@ class PostCrudController extends AbstractCrudController
         return Post::class;
     }
 
+<<<<<<< HEAD
     public function configureFields(string $pageName): iterable
     {
         return [
@@ -23,4 +28,16 @@ class PostCrudController extends AbstractCrudController
             AssociationField::new('category'),
         ];
     }
+=======
+    /*
+    public function configureFields(string $pageName): iterable
+    {
+        return [
+            IdField::new('id'),
+            TextField::new('title'),
+            TextEditorField::new('description'),
+        ];
+    }
+    */
+>>>>>>> back
 }

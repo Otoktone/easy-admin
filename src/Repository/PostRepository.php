@@ -19,6 +19,7 @@ class PostRepository extends ServiceEntityRepository
         parent::__construct($registry, Post::class);
     }
 
+<<<<<<< HEAD
     /**
      * @return Post[]
      */
@@ -37,6 +38,8 @@ class PostRepository extends ServiceEntityRepository
         return $query->getResult();
     }
 
+=======
+>>>>>>> back
     // /**
     //  * @return Post[] Returns an array of Post objects
     //  */
