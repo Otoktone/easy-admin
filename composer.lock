@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< Updated upstream
     "content-hash": "7e70fca3fd2742f5a1ca8b65e65ffe10",
+=======
+    "content-hash": "521c7a1ea71c29b01d1fc8d9b2d50535",
+>>>>>>> Stashed changes
     "packages": [
         {
             "name": "psr/cache",
