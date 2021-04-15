@@ -105,12 +105,9 @@ class Category extends AbstractCrudController
 
         return $this;
     }
-<<<<<<< HEAD
 
     public function __toString()
     {
         return $this->name;
     }
-=======
->>>>>>> back
 }

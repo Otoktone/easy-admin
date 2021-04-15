@@ -18,17 +18,12 @@ class DashboardController extends AbstractDashboardController
      */
     public function index(): Response
     {
-<<<<<<< HEAD
         #return parent::index();
 
         return $this->render('admin/admin.html.twig');
 
         #$routeBuilder = $this->get(AdminUrlGenerator::class);
         #return $this->redirect($routeBuilder->setController(PostCrudController::class)->generateUrl());
-=======
-        return parent::index();
-        #return $this->render('admin/admin.html.twig');
->>>>>>> back
     }
 
     public function configureDashboard(): Dashboard
@@ -36,18 +31,13 @@ class DashboardController extends AbstractDashboardController
         return Dashboard::new()
             ->setTitle('Admin')
             // the path defined in this method is passed to the Twig asset() function
-<<<<<<< HEAD
             ->setFaviconPath('build/images/favicon.png')
             ->setTranslationDomain('Admin');
-=======
-            ->setFaviconPath('build/images/favicon.png');
->>>>>>> back
     }
 
     public function configureMenuItems(): iterable
     {
         return [
-<<<<<<< HEAD
             MenuItem::linkToDashboard('Tableau de bord', 'fa fa-home'),
 
             MenuItem::section('Portfolio'),
@@ -56,16 +46,6 @@ class DashboardController extends AbstractDashboardController
 
             MenuItem::section('Utilisateurs'),
             MenuItem::linkToCrud('Utilisateurs', 'fa fa-user', User::class),
-=======
-            MenuItem::linkToDashboard('Dashboard', 'fa fa-home'),
-
-            MenuItem::section('Articles'),
-            MenuItem::linkToCrud('Categories', 'fa fa-tags', Category::class),
-            MenuItem::linkToCrud('Posts', 'fa fa-file-text', Post::class),
-
-            MenuItem::section('Users'),
-            MenuItem::linkToCrud('Users', 'fa fa-user', User::class),
->>>>>>> back
         ];
     }
 }
