@@ -5,6 +5,8 @@ namespace App\Controller\Admin;
 use App\Entity\Category;
 use App\Entity\Post;
 use App\Entity\User;
+use App\Entity\PostRepository;
+use App\Repository\PostRepository as RepositoryPostRepository;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
@@ -32,13 +34,14 @@ class DashboardController extends AbstractDashboardController
             ->setTitle('Admin')
             // the path defined in this method is passed to the Twig asset() function
             ->setFaviconPath('build/images/favicon.png')
+            ->setTranslationDomain('admin')
             ->setTranslationDomain('Admin');
     }
 
     public function configureMenuItems(): iterable
     {
         return [
-            MenuItem::linkToDashboard('Tableau de bord', 'fa fa-home'),
+            MenuItem::linkToDashboard('MENU', 'fa fa-home'),
 
             MenuItem::section('Portfolio'),
             MenuItem::linkToCrud('Catégories', 'fa fa-tags', Category::class),
